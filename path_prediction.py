@@ -85,11 +85,8 @@ best_model.summary()
 # Save model
 save_model(best_model)
 
-model_filename = "best_model.sav"
-joblib.dump(best_model, model_filename)
-
 # Fit the best model to the data
-batch_size = 128
+batch_size = 32
 history = model_fit(best_model, batch_size, x_train, y_train, x_test, y_test)
 
 print(np.average(history.history["val_loss"][-5:]))
