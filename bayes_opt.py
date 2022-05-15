@@ -69,7 +69,7 @@ def get_model(best_model):
 
 # save best model
 def save_model(best_model):
-    model_filename = "best_model.sav"
+    model_filename = "best_model"
     joblib.dump(best_model, model_filename)
     
     
