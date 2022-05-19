@@ -16,7 +16,9 @@ from sklearn.model_selection import train_test_split
 
 # objective function
 def objective(x):
-    return model.predict([x])
+	x_ML_cand, y_ML_cand = get_x_y_from_coords(model.predict([x]).tolist()[0])
+	target_coords, fea_coords, fea_coords_transformed, jk_D_min, phi, D, comment_tmp = determine_fitness_ind(x_ML_cand, y_ML_cand, False, func_line=func_line)
+	return jk_D_min
 
 
 # selection (compare k random candidates, select the one with the lowest fitness)
