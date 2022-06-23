@@ -1,5 +1,5 @@
 # Path Prediction of Compliant Mechanisms
-Optimization of path-generating compliant mechanisms, part of an ongoing master's thesis, still being worked upon and not fully functional. Uploaded here for backup 
+Optimization of path-generating compliant mechanisms, part of an ongoing master's thesis, still being worked upon. Uploaded here for backup 
 purposes for now. Contributions by Oguzhan Savas and Lars Muschalski from ILK of TU Dresden.
 
 By utilizing optimization methods (i.e. Genetic Algorithms),compliant mechanisms can be designed to follow a user defined target path, but this optimization procedure 
